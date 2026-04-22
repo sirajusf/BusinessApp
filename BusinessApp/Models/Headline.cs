@@ -1,0 +1,11 @@
+﻿namespace BusinessApp.Models
+{
+    public class Headline
+    {
+        public NewsSource source { get; set; }
+        public string author { get; set; }
+        public string title { get; set; }
+        public string url { get; set; }
+
+    }
+}

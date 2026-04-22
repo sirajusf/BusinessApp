@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "HeadLines";
+}
+@model List<BusinessApp.Models.Headline>
+
+<h1>HeadLines</h1>
+
+@foreach(var article in Model)
+{
+    <div class="news-card">
+        <div class="news-content">
+            <h2 class="news-title">@article.title</h2>
+            <p class="news-source">Source: <span>@article.source.name</span></p>
+        </div>
+        <a href="@article.url" target="_blank" class="news-link">Read More</a>
+    </div>
+}
